@@ -41,5 +41,6 @@ def copy_files(files):
             shutil.rmtree(path_new_dir+"/"+directory_name)
             print("new directory has been deleted after failure to copy files. CHECK path of the files")
 
-files = move_directory()
-copy_files(files)
+if __name__ == "__main__":
+    files = move_directory()
+    copy_files(files)
